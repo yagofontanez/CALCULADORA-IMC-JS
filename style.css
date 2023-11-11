@@ -1,0 +1,181 @@
+body {
+    background: linear-gradient(to left bottom, #59C173, #a17fe0, #5D26C1);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textocima {
+    font-weight: bolder;
+    margin-top: -100px;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+
+.container {
+    margin-top: 20px;
+}
+
+
+form {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(135,206,250, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  form input,
+  form button {
+    margin-bottom: 20px;
+    font-family: 'Kanit';
+    font-weight: bolder;
+}
+
+.botao {
+    --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.9em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-family: "Kanit", system-ui, sans-serif;
+  font-weight: bolder;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.botao:hover {
+    background-position: right top;
+}
+
+.botao:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .botao {
+      transition: linear;
+    }
+  }
+
+
+.nome {
+    color: white;
+    font-weight: bolder;
+    font-family: Arial;
+}
+
+.peso {
+    color: white;
+    font-weight: bolder;
+    font-family: Arial; 
+}
+
+.altura {
+    color: white;
+    font-weight: bolder;
+    font-family: Arial;
+}
+
+
+input[type="input"],
+input[type="number"] {
+        font-family: 'Arial', sans-serif;
+        font-weight: 100;
+}
+
+
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.9s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: white;
+    pointer-events: none;
+    font-family: Arial;
+    font-weight: bolder;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #abbaab, #ffffff);
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: white;
+    font-weight: 700;
+    font-family: Arial;
+  }
+  
+  
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+
+#resultado {
+    color: white;
+    font-weight: bolder;
+    font-family: Arial;
+}
